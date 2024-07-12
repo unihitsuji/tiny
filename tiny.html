@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>tiny</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../tiny/tiny.css">
+    <script src="../tiny/tiny.js"></script>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td id="canvas0" class="top left canvas width300 hide">
+        </td>
+        <td id="canvas1" class="top left canvas width300 hide">
+        </td>
+        <td class="right">
+          <textarea id="txt"  cols="82" rows="20"></textarea><br>
+          <select id="ref">
+            <option value=""></option>
+            <option value="/">/</option>
+            <option value="../tiny/README.md">README.md</option>
+            <option value="../tiny/tiny.txt">tiny.html</option>
+            <option value="../tiny/tiny.js">tiny.js</option>
+            <option value="../tiny/tiny.css">tiny.css</option>
+            <option value="">===========</option>
+            <option value="https://developer.mozilla.org/ja/">MDN</option>
+            <option value="https://ja.javascript.info/">
+              javascript.info</option>
+            <option value="https://www.tohoho-web.com/www.htm">とほほ</option>
+            <option value="https://chatgpt.com/">ChatGPT</option>
+            <option value="">===========</option>
+            <option value="https://codemirror.net/">CodeMirror</option>
+            <option value="https://marked.js.org/">marked</option>
+            <option value="https://highlightjs.org/">hightlightjs</option>
+            <option value="">===========</option>
+            <option value="https://www.typescriptlang.org/ja/">
+              TypeScript</option>
+            <option value="https://ja.react.dev/">React</option>
+            <option value=""></option>
+            <option value=""></option>
+          </select>
+          <input    id="url"   class="dark" type="text" size="10">
+          <!-- 実際の LOAD は label ではなく input -->
+          <label    id="proxy" class="file" for="load">LOAD</label>
+          <input    id="load"  class="file" type="file">
+          <!-- save button で使用されるリンク -->
+          <a id="hide" style="display: none;"></a>
+          <button   id="save">SAVE</button>
+          <button   id="pull">PULL</button>
+          <button   id="push">PUSH</button>
+          <button   id="exec">EXEC</button>
+          <button   id="reset">RESET</button><br>
+          <textarea id="out"   cols="82" rows="10"></textarea><br>
+          <textarea id="err"   cols="82" rows="10"></textarea>
+        </td>
+        <td id="canvas2" class="top left canvas width300 hide">
+        </td>
+        <td id="canvas3" class="top left canvas width300 hide">
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
